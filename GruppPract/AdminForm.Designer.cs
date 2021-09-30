@@ -42,6 +42,7 @@ namespace GruppPract
             this.labelAdminRecipieDescription = new System.Windows.Forms.Label();
             this.buttonAdminAddRecipe = new System.Windows.Forms.Button();
             this.buttonAdminUpdateRecipe = new System.Windows.Forms.Button();
+            this.buttonLogOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxAdminRecipeName
@@ -153,11 +154,21 @@ namespace GruppPract
             this.buttonAdminUpdateRecipe.Text = "Update";
             this.buttonAdminUpdateRecipe.UseVisualStyleBackColor = true;
             // 
+            // buttonLogOut
+            // 
+            this.buttonLogOut.Location = new System.Drawing.Point(435, 290);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.Size = new System.Drawing.Size(75, 23);
+            this.buttonLogOut.TabIndex = 25;
+            this.buttonLogOut.Text = "Log out";
+            this.buttonLogOut.UseVisualStyleBackColor = true;
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 325);
+            this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.buttonAdminUpdateRecipe);
             this.Controls.Add(this.buttonAdminAddRecipe);
             this.Controls.Add(this.labelAdminRecipieDescription);
@@ -192,5 +203,6 @@ namespace GruppPract
         private System.Windows.Forms.Label labelAdminRecipieDescription;
         private System.Windows.Forms.Button buttonAdminAddRecipe;
         private System.Windows.Forms.Button buttonAdminUpdateRecipe;
+        private System.Windows.Forms.Button buttonLogOut;
     }
 }

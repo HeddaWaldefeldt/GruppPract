@@ -39,11 +39,13 @@ namespace GruppPract
             this.buttonLogin = new System.Windows.Forms.Button();
             this.listBoxRecipeName = new System.Windows.Forms.ListBox();
             this.listBoxRecipeDescription = new System.Windows.Forms.ListBox();
+            this.radioButtonName = new System.Windows.Forms.RadioButton();
+            this.radioButtonType = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(29, 41);
+            this.txtSearch.Location = new System.Drawing.Point(29, 40);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(158, 20);
             this.txtSearch.TabIndex = 0;
@@ -51,7 +53,7 @@ namespace GruppPract
             // labelSearch
             // 
             this.labelSearch.AutoSize = true;
-            this.labelSearch.Location = new System.Drawing.Point(26, 25);
+            this.labelSearch.Location = new System.Drawing.Point(26, 24);
             this.labelSearch.Name = "labelSearch";
             this.labelSearch.Size = new System.Drawing.Size(73, 13);
             this.labelSearch.TabIndex = 1;
@@ -91,7 +93,7 @@ namespace GruppPract
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(29, 67);
+            this.buttonSearch.Location = new System.Drawing.Point(134, 63);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(75, 23);
             this.buttonSearch.TabIndex = 4;
@@ -123,11 +125,35 @@ namespace GruppPract
             this.listBoxRecipeDescription.Size = new System.Drawing.Size(340, 173);
             this.listBoxRecipeDescription.TabIndex = 7;
             // 
+            // radioButtonName
+            // 
+            this.radioButtonName.AutoSize = true;
+            this.radioButtonName.Location = new System.Drawing.Point(29, 66);
+            this.radioButtonName.Name = "radioButtonName";
+            this.radioButtonName.Size = new System.Drawing.Size(53, 17);
+            this.radioButtonName.TabIndex = 8;
+            this.radioButtonName.TabStop = true;
+            this.radioButtonName.Text = "Name";
+            this.radioButtonName.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonType
+            // 
+            this.radioButtonType.AutoSize = true;
+            this.radioButtonType.Location = new System.Drawing.Point(79, 66);
+            this.radioButtonType.Name = "radioButtonType";
+            this.radioButtonType.Size = new System.Drawing.Size(49, 17);
+            this.radioButtonType.TabIndex = 8;
+            this.radioButtonType.TabStop = true;
+            this.radioButtonType.Text = "Type";
+            this.radioButtonType.UseVisualStyleBackColor = true;
+            // 
             // RecipeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 471);
+            this.Controls.Add(this.radioButtonType);
+            this.Controls.Add(this.radioButtonName);
             this.Controls.Add(this.listBoxRecipeDescription);
             this.Controls.Add(this.listBoxRecipeName);
             this.Controls.Add(this.buttonLogin);
@@ -157,6 +183,8 @@ namespace GruppPract
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.ListBox listBoxRecipeName;
         private System.Windows.Forms.ListBox listBoxRecipeDescription;
+        private System.Windows.Forms.RadioButton radioButtonName;
+        private System.Windows.Forms.RadioButton radioButtonType;
     }
 }
 
