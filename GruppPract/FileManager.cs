@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace GruppPract
 {
-    public class Recept
+    class FileManager
     {
-        public int MyProperty { get; set; }
-
     }
 }
