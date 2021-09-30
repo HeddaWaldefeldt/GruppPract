@@ -4,7 +4,6 @@ namespace GruppPract
 {
     public class FileManager
     {
-        public string FilePath { get; set; }
 
         public BindingList<Recipe> LoadRecipeList(string filePath)
         {

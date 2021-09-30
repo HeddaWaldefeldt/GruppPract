@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Admin.cs" />
     <Compile Include="FileManager.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="RecipeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +90,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RecipeList.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
