@@ -59,22 +59,22 @@ namespace GruppPract
             // 
             // textBoxUserName
             // 
-            this.textBoxUserName.Location = new System.Drawing.Point(320, 96);
+            this.textBoxUserName.Location = new System.Drawing.Point(305, 96);
             this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxUserName.Size = new System.Drawing.Size(134, 20);
             this.textBoxUserName.TabIndex = 2;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(320, 135);
+            this.textBoxPassword.Location = new System.Drawing.Point(305, 135);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(134, 20);
             this.textBoxPassword.TabIndex = 2;
             // 
             // labelUserName
             // 
             this.labelUserName.AutoSize = true;
-            this.labelUserName.Location = new System.Drawing.Point(317, 80);
+            this.labelUserName.Location = new System.Drawing.Point(302, 80);
             this.labelUserName.Name = "labelUserName";
             this.labelUserName.Size = new System.Drawing.Size(55, 13);
             this.labelUserName.TabIndex = 3;
@@ -83,7 +83,7 @@ namespace GruppPract
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(317, 119);
+            this.labelPassword.Location = new System.Drawing.Point(302, 119);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(53, 13);
             this.labelPassword.TabIndex = 3;
@@ -100,7 +100,7 @@ namespace GruppPract
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(320, 161);
+            this.buttonLogin.Location = new System.Drawing.Point(364, 161);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonLogin.TabIndex = 5;
@@ -120,7 +120,7 @@ namespace GruppPract
             this.listBoxRecipeDescription.FormattingEnabled = true;
             this.listBoxRecipeDescription.Location = new System.Drawing.Point(29, 276);
             this.listBoxRecipeDescription.Name = "listBoxRecipeDescription";
-            this.listBoxRecipeDescription.Size = new System.Drawing.Size(444, 173);
+            this.listBoxRecipeDescription.Size = new System.Drawing.Size(340, 173);
             this.listBoxRecipeDescription.TabIndex = 7;
             // 
             // RecipeForm

@@ -15,9 +15,6 @@ namespace GruppPract
         public RecipeForm()
         {
             InitializeComponent();
-
-
-            // Hej  hej ehj
         }
     }
 }
