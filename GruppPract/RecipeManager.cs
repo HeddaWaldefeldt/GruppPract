@@ -1,12 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace GruppPract
 {
-    class RecipeManager
+    public class RecipeManager
     {
+        public BindingList<Recipe> RecipeList { get; set; }
+
+        public void AddRecipe(Recipe recipe)
+        {
+            RecipeList.Add(recipe);
+        }
+
+        public void DeleteRecipe(Recipe recipe)
+        {
+            RecipeList.Remove(recipe);
+        }
+
+        public void EditRecipe(Recipe recipe)
+        {
+
+        }
     }
 }
