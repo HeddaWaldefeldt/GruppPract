@@ -8,6 +8,7 @@ namespace GruppPract
 {
     public class Recept
     {
+        public int MyProperty { get; set; }
 
     }
 }
