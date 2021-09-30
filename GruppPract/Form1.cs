@@ -15,6 +15,9 @@ namespace GruppPract
         public Form1()
         {
             InitializeComponent();
+
+
+            // Hej  hej ehj
         }
     }
 }
