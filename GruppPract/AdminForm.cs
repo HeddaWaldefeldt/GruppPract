@@ -17,7 +17,15 @@ namespace GruppPract
 
         private void buttonAdminSearch_Click(object sender, EventArgs e)
         {
-
+            string searchCriteria = textBoxAdminSearch.Text;
+            RecipeManager rm = new RecipeManager();
+            foreach (Recipe recipe in rm.RecipeList)
+            {
+                if (recipe.Title.ToLower().Contains(searchCriteria.ToLower()) && recipe.Type.ToLower().Contains(searchCriteria.ToLower()))
+                {
+                    listBoxAdminRecipeName.Items.Add(recipe);
+                }
+            }
         }
 
         private void buttonAdminDeleteRecipe_Click(object sender, EventArgs e)
@@ -31,8 +39,9 @@ namespace GruppPract
             string message = Model.AddRecipe(textBoxAdminRecipieName.Text, textBoxAdminRecipeType.Text, textBoxAdminRecipeDescription.Text);
                 
             MessageBox.Show(message);
-            
 
+
+            listBoxAdminRecipeName.Items.Clear();
             
             // TODO: If validation fails, inform user.
             // TODO: Refresh listboxes here. 
