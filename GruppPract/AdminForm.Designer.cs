@@ -61,6 +61,7 @@ namespace GruppPract
             this.buttonAdminSearch.TabIndex = 14;
             this.buttonAdminSearch.Text = "Search";
             this.buttonAdminSearch.UseVisualStyleBackColor = true;
+            this.buttonAdminSearch.Click += new System.EventHandler(this.buttonAdminSearch_Click);
             // 
             // labelAdminSearch
             // 
@@ -86,6 +87,7 @@ namespace GruppPract
             this.buttonAdminDeleteRecipe.TabIndex = 18;
             this.buttonAdminDeleteRecipe.Text = "Delete";
             this.buttonAdminDeleteRecipe.UseVisualStyleBackColor = true;
+            this.buttonAdminDeleteRecipe.Click += new System.EventHandler(this.buttonAdminDeleteRecipe_Click);
             // 
             // textBoxAdminRecipeType
             // 
@@ -144,6 +146,7 @@ namespace GruppPract
             this.buttonAdminAddRecipe.TabIndex = 23;
             this.buttonAdminAddRecipe.Text = "Add";
             this.buttonAdminAddRecipe.UseVisualStyleBackColor = true;
+            this.buttonAdminAddRecipe.Click += new System.EventHandler(this.buttonAdminAddRecipe_Click);
             // 
             // buttonAdminUpdateRecipe
             // 
@@ -153,6 +156,7 @@ namespace GruppPract
             this.buttonAdminUpdateRecipe.TabIndex = 24;
             this.buttonAdminUpdateRecipe.Text = "Update";
             this.buttonAdminUpdateRecipe.UseVisualStyleBackColor = true;
+            this.buttonAdminUpdateRecipe.Click += new System.EventHandler(this.buttonAdminUpdateRecipe_Click);
             // 
             // buttonLogOut
             // 
@@ -162,6 +166,7 @@ namespace GruppPract
             this.buttonLogOut.TabIndex = 25;
             this.buttonLogOut.Text = "Log out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // AdminForm
             // 

@@ -99,6 +99,7 @@ namespace GruppPract
             this.buttonSearch.TabIndex = 4;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // buttonLogin
             // 
@@ -108,6 +109,7 @@ namespace GruppPract
             this.buttonLogin.TabIndex = 5;
             this.buttonLogin.Text = "Log in";
             this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // listBoxRecipeName
             // 

@@ -4,7 +4,7 @@ namespace GruppPract
 {
     public class RecipeManager
     {
-        public BindingList<Recipe> RecipeList { get; set; }
+        public BindingList<Recipe> RecipeList { get; set; } = new BindingList<Recipe>();
 
         public void AddRecipe(Recipe recipe)
         {
