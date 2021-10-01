@@ -32,7 +32,7 @@ namespace GruppPract
             this.listBoxAdminRecipeName = new System.Windows.Forms.ListBox();
             this.buttonAdminSearch = new System.Windows.Forms.Button();
             this.labelAdminSearch = new System.Windows.Forms.Label();
-            this.txtAdminSearch = new System.Windows.Forms.TextBox();
+            this.textBoxAdminSearch = new System.Windows.Forms.TextBox();
             this.buttonAdminDeleteRecipe = new System.Windows.Forms.Button();
             this.textBoxAdminRecipeType = new System.Windows.Forms.TextBox();
             this.textBoxAdminRecipieName = new System.Windows.Forms.TextBox();
@@ -72,12 +72,12 @@ namespace GruppPract
             this.labelAdminSearch.TabIndex = 9;
             this.labelAdminSearch.Text = "Search recipe";
             // 
-            // txtAdminSearch
+            // textBoxAdminSearch
             // 
-            this.txtAdminSearch.Location = new System.Drawing.Point(23, 27);
-            this.txtAdminSearch.Name = "txtAdminSearch";
-            this.txtAdminSearch.Size = new System.Drawing.Size(200, 20);
-            this.txtAdminSearch.TabIndex = 8;
+            this.textBoxAdminSearch.Location = new System.Drawing.Point(23, 27);
+            this.textBoxAdminSearch.Name = "textBoxAdminSearch";
+            this.textBoxAdminSearch.Size = new System.Drawing.Size(200, 20);
+            this.textBoxAdminSearch.TabIndex = 8;
             // 
             // buttonAdminDeleteRecipe
             // 
@@ -186,7 +186,7 @@ namespace GruppPract
             this.Controls.Add(this.listBoxAdminRecipeName);
             this.Controls.Add(this.buttonAdminSearch);
             this.Controls.Add(this.labelAdminSearch);
-            this.Controls.Add(this.txtAdminSearch);
+            this.Controls.Add(this.textBoxAdminSearch);
             this.Name = "AdminForm";
             this.Text = "Admin";
             this.ResumeLayout(false);
@@ -198,7 +198,7 @@ namespace GruppPract
         private System.Windows.Forms.ListBox listBoxAdminRecipeName;
         private System.Windows.Forms.Button buttonAdminSearch;
         private System.Windows.Forms.Label labelAdminSearch;
-        private System.Windows.Forms.TextBox txtAdminSearch;
+        private System.Windows.Forms.TextBox textBoxAdminSearch;
         private System.Windows.Forms.Button buttonAdminDeleteRecipe;
         private System.Windows.Forms.TextBox textBoxAdminRecipeType;
         private System.Windows.Forms.TextBox textBoxAdminRecipieName;

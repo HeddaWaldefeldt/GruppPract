@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace GruppPract
 {
@@ -71,23 +72,24 @@ namespace GruppPract
                 recipe.Title = title;
                 recipe.Type = type;
                 recipe.Description = description;
-                RecipeManager.AddRecipe(recpie);
+                RecipeManager.AddRecipe(recipe);
 
                 return message = "Ditt recept är nu uppladdat!";  
             }
 
             
-        }
-            // Add validation logic here.
-            // RecipeManager.AddRecipe();
-            // return true.
-            //throw new NotImplementedException();
-            // Validation fails, return false. Display error message in GUI.
-        }
+        //}
+        //    // Add validation logic here.
+        //    // RecipeManager.AddRecipe();
+        //    // return true.
+        //    //throw new NotImplementedException();
+        //    // Validation fails, return false. Display error message in GUI.
+        //}
 
-        public void DeleteRecipe(Recipe recipe)
-        {
-            RecipeManager.DeleteRecipe(recipe);
+        //public void DeleteRecipe(Recipe recipe)
+        //{
+        //    RecipeManager.DeleteRecipe(recipe);
+        //}
         }
     }
 }
