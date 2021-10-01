@@ -41,27 +41,29 @@ namespace GruppPract
             FileManager.SaveRecipeList(filePath, RecipeManager.RecipeList);
         }
 
-        public void AddRecipe(string title, string type, string description)
+        public string AddRecipe(string title, string type, string description)
         {
             Regex regex = new Regex("[A-Öa-ö]");
             bool containsNumOrSpecialCharacter = regex.IsMatch(type); 
             
+            string message= "";
 
             if (string.IsNullOrEmpty(title))
             {
-                MessageBox.Show("Du måste fylla i en recepttitel");
+                message = "Du måste fylla i en recepttitel";
+                return message;
             }
             else if (string.IsNullOrEmpty(type))
             {
-                MessageBox.Show("Du måste fylla i en kategori");
+               return message= "Du måste fylla i en kategori";
             }
             else if (containsNumOrSpecialCharacter)
             {
-                MessageBox.Show("Kategorin får inte innehålla specialtecken eller nummer");
+                return message = "Kategorin får inte innehålla specialtecken eller nummer";
             }
             else if (string.IsNullOrEmpty(description))
             {
-                MessageBox.Show("Du måste fylla i en beskrvning");    
+                return message = "Du måste fylla i en beskrvning";    
             }
             else 
             {
@@ -70,6 +72,8 @@ namespace GruppPract
                 recipe.Type = type;
                 recipe.Description = description;
                 RecipeManager.AddRecipe(recpie);
+
+                return message = "Ditt recept är nu uppladdat!";  
             }
 
             

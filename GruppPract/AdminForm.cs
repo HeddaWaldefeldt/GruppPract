@@ -28,16 +28,10 @@ namespace GruppPract
         private void buttonAdminAddRecipe_Click(object sender, EventArgs e)
         {   
 
-            try
-            {
-                Model.AddRecipe(textBoxAdminRecipieName.Text, textBoxAdminRecipeType.Text, textBoxAdminRecipeDescription.Text);
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("The recipe you tried to add is not a real foodtype");
-            }
-
-
+            string message = Model.AddRecipe(textBoxAdminRecipieName.Text, textBoxAdminRecipeType.Text, textBoxAdminRecipeDescription.Text);
+                
+            MessageBox.Show(message);
+            
 
             
             // TODO: If validation fails, inform user.
