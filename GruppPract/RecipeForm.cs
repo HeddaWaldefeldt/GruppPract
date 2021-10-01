@@ -17,7 +17,7 @@ namespace GruppPract
 
             _model = Model.Instance;
 
-            listBoxRecipeName.DataSource = Model.RecipeManager.RecipeList;
+            listBoxRecipeTitle.DataSource = Model.RecipeManager.RecipeList;
             listBoxRecipeDescription.DataSource = Model.RecipeManager.RecipeList;
         }
 

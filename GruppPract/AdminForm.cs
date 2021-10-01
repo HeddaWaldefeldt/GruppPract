@@ -23,7 +23,7 @@ namespace GruppPract
             {
                 if (recipe.Title.ToLower().Contains(searchCriteria.ToLower()) && recipe.Type.ToLower().Contains(searchCriteria.ToLower()))
                 {
-                    listBoxAdminRecipeName.Items.Add(recipe);
+                    listBoxAdminRecipeTitle.Items.Add(recipe.Title);
                 }
             }
         }
@@ -41,7 +41,7 @@ namespace GruppPract
             MessageBox.Show(message);
 
 
-            listBoxAdminRecipeName.Items.Clear();
+            listBoxAdminRecipeTitle.Items.Clear();
             
             // TODO: If validation fails, inform user.
             // TODO: Refresh listboxes here. 

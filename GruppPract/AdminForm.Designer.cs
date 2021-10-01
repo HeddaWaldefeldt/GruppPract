@@ -29,7 +29,7 @@ namespace GruppPract
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBoxAdminRecipeName = new System.Windows.Forms.ListBox();
+            this.listBoxAdminRecipeTitle = new System.Windows.Forms.ListBox();
             this.buttonAdminSearch = new System.Windows.Forms.Button();
             this.labelAdminSearch = new System.Windows.Forms.Label();
             this.textBoxAdminSearch = new System.Windows.Forms.TextBox();
@@ -45,20 +45,20 @@ namespace GruppPract
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBoxAdminRecipeName
+            // listBoxAdminRecipeTitle
             // 
-            this.listBoxAdminRecipeName.FormattingEnabled = true;
-            this.listBoxAdminRecipeName.Location = new System.Drawing.Point(23, 82);
-            this.listBoxAdminRecipeName.Name = "listBoxAdminRecipeName";
-            this.listBoxAdminRecipeName.Size = new System.Drawing.Size(200, 160);
-            this.listBoxAdminRecipeName.TabIndex = 16;
+            this.listBoxAdminRecipeTitle.FormattingEnabled = true;
+            this.listBoxAdminRecipeTitle.Location = new System.Drawing.Point(23, 82);
+            this.listBoxAdminRecipeTitle.Name = "listBoxAdminRecipeTitle";
+            this.listBoxAdminRecipeTitle.Size = new System.Drawing.Size(200, 160);
+            this.listBoxAdminRecipeTitle.TabIndex = 3;
             // 
             // buttonAdminSearch
             // 
             this.buttonAdminSearch.Location = new System.Drawing.Point(23, 53);
             this.buttonAdminSearch.Name = "buttonAdminSearch";
             this.buttonAdminSearch.Size = new System.Drawing.Size(75, 23);
-            this.buttonAdminSearch.TabIndex = 14;
+            this.buttonAdminSearch.TabIndex = 2;
             this.buttonAdminSearch.Text = "Search";
             this.buttonAdminSearch.UseVisualStyleBackColor = true;
             this.buttonAdminSearch.Click += new System.EventHandler(this.buttonAdminSearch_Click);
@@ -77,14 +77,14 @@ namespace GruppPract
             this.textBoxAdminSearch.Location = new System.Drawing.Point(23, 27);
             this.textBoxAdminSearch.Name = "textBoxAdminSearch";
             this.textBoxAdminSearch.Size = new System.Drawing.Size(200, 20);
-            this.textBoxAdminSearch.TabIndex = 8;
+            this.textBoxAdminSearch.TabIndex = 1;
             // 
             // buttonAdminDeleteRecipe
             // 
             this.buttonAdminDeleteRecipe.Location = new System.Drawing.Point(23, 248);
             this.buttonAdminDeleteRecipe.Name = "buttonAdminDeleteRecipe";
             this.buttonAdminDeleteRecipe.Size = new System.Drawing.Size(75, 23);
-            this.buttonAdminDeleteRecipe.TabIndex = 18;
+            this.buttonAdminDeleteRecipe.TabIndex = 4;
             this.buttonAdminDeleteRecipe.Text = "Delete";
             this.buttonAdminDeleteRecipe.UseVisualStyleBackColor = true;
             this.buttonAdminDeleteRecipe.Click += new System.EventHandler(this.buttonAdminDeleteRecipe_Click);
@@ -94,14 +94,14 @@ namespace GruppPract
             this.textBoxAdminRecipeType.Location = new System.Drawing.Point(265, 27);
             this.textBoxAdminRecipeType.Name = "textBoxAdminRecipeType";
             this.textBoxAdminRecipeType.Size = new System.Drawing.Size(105, 20);
-            this.textBoxAdminRecipeType.TabIndex = 19;
+            this.textBoxAdminRecipeType.TabIndex = 5;
             // 
             // textBoxAdminRecipieName
             // 
             this.textBoxAdminRecipieName.Location = new System.Drawing.Point(376, 27);
             this.textBoxAdminRecipieName.Name = "textBoxAdminRecipieName";
             this.textBoxAdminRecipieName.Size = new System.Drawing.Size(134, 20);
-            this.textBoxAdminRecipieName.TabIndex = 19;
+            this.textBoxAdminRecipieName.TabIndex = 6;
             // 
             // textBoxAdminRecipeDescription
             // 
@@ -109,7 +109,7 @@ namespace GruppPract
             this.textBoxAdminRecipeDescription.Multiline = true;
             this.textBoxAdminRecipeDescription.Name = "textBoxAdminRecipeDescription";
             this.textBoxAdminRecipeDescription.Size = new System.Drawing.Size(245, 160);
-            this.textBoxAdminRecipeDescription.TabIndex = 19;
+            this.textBoxAdminRecipeDescription.TabIndex = 7;
             // 
             // labelAdminRecipeType
             // 
@@ -143,7 +143,7 @@ namespace GruppPract
             this.buttonAdminAddRecipe.Location = new System.Drawing.Point(265, 248);
             this.buttonAdminAddRecipe.Name = "buttonAdminAddRecipe";
             this.buttonAdminAddRecipe.Size = new System.Drawing.Size(75, 23);
-            this.buttonAdminAddRecipe.TabIndex = 23;
+            this.buttonAdminAddRecipe.TabIndex = 8;
             this.buttonAdminAddRecipe.Text = "Add";
             this.buttonAdminAddRecipe.UseVisualStyleBackColor = true;
             this.buttonAdminAddRecipe.Click += new System.EventHandler(this.buttonAdminAddRecipe_Click);
@@ -153,7 +153,7 @@ namespace GruppPract
             this.buttonAdminUpdateRecipe.Location = new System.Drawing.Point(435, 248);
             this.buttonAdminUpdateRecipe.Name = "buttonAdminUpdateRecipe";
             this.buttonAdminUpdateRecipe.Size = new System.Drawing.Size(75, 23);
-            this.buttonAdminUpdateRecipe.TabIndex = 24;
+            this.buttonAdminUpdateRecipe.TabIndex = 9;
             this.buttonAdminUpdateRecipe.Text = "Update";
             this.buttonAdminUpdateRecipe.UseVisualStyleBackColor = true;
             this.buttonAdminUpdateRecipe.Click += new System.EventHandler(this.buttonAdminUpdateRecipe_Click);
@@ -163,7 +163,7 @@ namespace GruppPract
             this.buttonLogOut.Location = new System.Drawing.Point(435, 290);
             this.buttonLogOut.Name = "buttonLogOut";
             this.buttonLogOut.Size = new System.Drawing.Size(75, 23);
-            this.buttonLogOut.TabIndex = 25;
+            this.buttonLogOut.TabIndex = 10;
             this.buttonLogOut.Text = "Log out";
             this.buttonLogOut.UseVisualStyleBackColor = true;
             this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
@@ -183,7 +183,7 @@ namespace GruppPract
             this.Controls.Add(this.textBoxAdminRecipieName);
             this.Controls.Add(this.textBoxAdminRecipeType);
             this.Controls.Add(this.buttonAdminDeleteRecipe);
-            this.Controls.Add(this.listBoxAdminRecipeName);
+            this.Controls.Add(this.listBoxAdminRecipeTitle);
             this.Controls.Add(this.buttonAdminSearch);
             this.Controls.Add(this.labelAdminSearch);
             this.Controls.Add(this.textBoxAdminSearch);
@@ -195,7 +195,7 @@ namespace GruppPract
         }
 
         #endregion
-        private System.Windows.Forms.ListBox listBoxAdminRecipeName;
+        private System.Windows.Forms.ListBox listBoxAdminRecipeTitle;
         private System.Windows.Forms.Button buttonAdminSearch;
         private System.Windows.Forms.Label labelAdminSearch;
         private System.Windows.Forms.TextBox textBoxAdminSearch;

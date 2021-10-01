@@ -29,7 +29,7 @@ namespace GruppPract
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.labelSearch = new System.Windows.Forms.Label();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
@@ -37,18 +37,18 @@ namespace GruppPract
             this.labelPassword = new System.Windows.Forms.Label();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
-            this.listBoxRecipeName = new System.Windows.Forms.ListBox();
+            this.listBoxRecipeTitle = new System.Windows.Forms.ListBox();
             this.listBoxRecipeDescription = new System.Windows.Forms.ListBox();
-            this.radioButtonName = new System.Windows.Forms.RadioButton();
+            this.radioButtonTitle = new System.Windows.Forms.RadioButton();
             this.radioButtonType = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
-            // txtSearch
+            // textBoxSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(29, 40);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(158, 20);
-            this.txtSearch.TabIndex = 0;
+            this.textBoxSearch.Location = new System.Drawing.Point(29, 40);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(158, 20);
+            this.textBoxSearch.TabIndex = 0;
             // 
             // labelSearch
             // 
@@ -65,6 +65,7 @@ namespace GruppPract
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(134, 20);
             this.textBoxUserName.TabIndex = 2;
+            this.textBoxUserName.Text = "Username";
             // 
             // textBoxPassword
             // 
@@ -72,6 +73,7 @@ namespace GruppPract
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(134, 20);
             this.textBoxPassword.TabIndex = 2;
+            this.textBoxPassword.Text = "Password";
             // 
             // labelUserName
             // 
@@ -111,13 +113,13 @@ namespace GruppPract
             this.buttonLogin.UseVisualStyleBackColor = true;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // listBoxRecipeName
+            // listBoxRecipeTitle
             // 
-            this.listBoxRecipeName.FormattingEnabled = true;
-            this.listBoxRecipeName.Location = new System.Drawing.Point(29, 96);
-            this.listBoxRecipeName.Name = "listBoxRecipeName";
-            this.listBoxRecipeName.Size = new System.Drawing.Size(200, 160);
-            this.listBoxRecipeName.TabIndex = 6;
+            this.listBoxRecipeTitle.FormattingEnabled = true;
+            this.listBoxRecipeTitle.Location = new System.Drawing.Point(29, 96);
+            this.listBoxRecipeTitle.Name = "listBoxRecipeTitle";
+            this.listBoxRecipeTitle.Size = new System.Drawing.Size(200, 160);
+            this.listBoxRecipeTitle.TabIndex = 6;
             // 
             // listBoxRecipeDescription
             // 
@@ -127,16 +129,16 @@ namespace GruppPract
             this.listBoxRecipeDescription.Size = new System.Drawing.Size(340, 173);
             this.listBoxRecipeDescription.TabIndex = 7;
             // 
-            // radioButtonName
+            // radioButtonTitle
             // 
-            this.radioButtonName.AutoSize = true;
-            this.radioButtonName.Location = new System.Drawing.Point(29, 66);
-            this.radioButtonName.Name = "radioButtonName";
-            this.radioButtonName.Size = new System.Drawing.Size(53, 17);
-            this.radioButtonName.TabIndex = 8;
-            this.radioButtonName.TabStop = true;
-            this.radioButtonName.Text = "Name";
-            this.radioButtonName.UseVisualStyleBackColor = true;
+            this.radioButtonTitle.AutoSize = true;
+            this.radioButtonTitle.Location = new System.Drawing.Point(29, 66);
+            this.radioButtonTitle.Name = "radioButtonTitle";
+            this.radioButtonTitle.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonTitle.TabIndex = 8;
+            this.radioButtonTitle.TabStop = true;
+            this.radioButtonTitle.Text = "Title";
+            this.radioButtonTitle.UseVisualStyleBackColor = true;
             // 
             // radioButtonType
             // 
@@ -155,9 +157,9 @@ namespace GruppPract
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 471);
             this.Controls.Add(this.radioButtonType);
-            this.Controls.Add(this.radioButtonName);
+            this.Controls.Add(this.radioButtonTitle);
             this.Controls.Add(this.listBoxRecipeDescription);
-            this.Controls.Add(this.listBoxRecipeName);
+            this.Controls.Add(this.listBoxRecipeTitle);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.labelPassword);
@@ -165,7 +167,7 @@ namespace GruppPract
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUserName);
             this.Controls.Add(this.labelSearch);
-            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.textBoxSearch);
             this.Name = "RecipeForm";
             this.Text = "Search recipe";
             this.ResumeLayout(false);
@@ -175,7 +177,7 @@ namespace GruppPract
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Label labelSearch;
         private System.Windows.Forms.TextBox textBoxUserName;
         private System.Windows.Forms.TextBox textBoxPassword;
@@ -183,9 +185,9 @@ namespace GruppPract
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.Button buttonLogin;
-        private System.Windows.Forms.ListBox listBoxRecipeName;
+        private System.Windows.Forms.ListBox listBoxRecipeTitle;
         private System.Windows.Forms.ListBox listBoxRecipeDescription;
-        private System.Windows.Forms.RadioButton radioButtonName;
+        private System.Windows.Forms.RadioButton radioButtonTitle;
         private System.Windows.Forms.RadioButton radioButtonType;
     }
 }
