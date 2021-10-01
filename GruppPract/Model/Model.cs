@@ -41,12 +41,43 @@ namespace GruppPract
             FileManager.SaveRecipeList(filePath, RecipeManager.RecipeList);
         }
 
-        public bool AddRecipe(string title, string type, string description)
+        public void AddRecipe(string title, string type, string description)
         {
+            Regex regex = new Regex("[A-Öa-ö]");
+            bool containsNumOrSpecialCharacter = regex.IsMatch(type); 
+            
+
+            if (string.IsNullOrEmpty(title))
+            {
+                MessageBox.Show("Du måste fylla i en recepttitel");
+            }
+            else if (string.IsNullOrEmpty(type))
+            {
+                MessageBox.Show("Du måste fylla i en kategori");
+            }
+            else if (containsNumOrSpecialCharacter)
+            {
+                MessageBox.Show("Kategorin får inte innehålla specialtecken eller nummer");
+            }
+            else if (string.IsNullOrEmpty(description))
+            {
+                MessageBox.Show("Du måste fylla i en beskrvning");    
+            }
+            else 
+            {
+                Recipe recipe = new Recipe();
+                recipe.Title = title;
+                recipe.Type = type;
+                recipe.Description = description;
+                RecipeManager.AddRecipe(recpie);
+            }
+
+            
+        }
             // Add validation logic here.
             // RecipeManager.AddRecipe();
             // return true.
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             // Validation fails, return false. Display error message in GUI.
         }
 
