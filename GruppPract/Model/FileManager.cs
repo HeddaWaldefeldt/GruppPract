@@ -9,7 +9,7 @@ namespace GruppPract
         {
             throw new NotImplementedException();
             // Load from .csv-file
-            //return new BindingList<Recipe>();
+            // return new BindingList<Recipe>();
         }
 
         public void SaveRecipeList(string filePath, BindingList<Recipe> recipeList)
