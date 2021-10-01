@@ -57,7 +57,7 @@ namespace GruppPract
             {
                return message= "Du måste fylla i en kategori";
             }
-            else if (containsNumOrSpecialCharacter)
+            else if (!containsNumOrSpecialCharacter)
             {
                 return message = "Kategorin får inte innehålla specialtecken eller nummer";
             }
